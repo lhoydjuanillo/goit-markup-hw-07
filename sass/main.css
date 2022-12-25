@@ -1,0 +1,135 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.contact__list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__items:not(:last-child) {
+  margin-right: 70px;
+}
+
+.header__logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1923076923;
+  /* line-weight always in cal (line/fontsize) */
+  letter-spacing: 0.03em;
+  color: #2196F3;
+  margin-right: 97px;
+}
+
+.nav__links {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  transition: color var(--time) var(--time-function);
+}
+.nav__links:hover, .nav__links:focus {
+  color: #2196F3;
+}
+
+.studio__links--current,
+.portfolio__links--current {
+  color: #2196F3;
+}
+
+.studio__links--current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 4px;
+  top: 76px;
+  background-color: #2196F3;
+  border-radius: 2px;
+}
+
+.header__contacts {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: #757575;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  transition: color var(--time) var(--time-function);
+}
+.header__contacts:hover, .header__contacts:focus {
+  color: #2196F3;
+}
+
+.header__contacts--current {
+  color: #2196F3;
+}
+
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  color: var(--black-font-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}/*# sourceMappingURL=main.css.map */
