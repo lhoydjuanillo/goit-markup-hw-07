@@ -101,13 +101,13 @@
     border-radius: 50%;
     cursor: pointer;
     padding: 7px 7px;
-    color: var(--logo-color);
+    color: vars.$logo-color;
     transition: color var(--time) var(--time-function) ;
-}
 
-.modal__close:hover, 
-.modal__close:focus {
-    fill: currentColor;
+    &:hover,
+    &:focus {
+        fill: currentColor;
+    }
 }
 
 .form__title {
@@ -142,7 +142,7 @@
     font-size: 12px;
     line-height: calc(14/12);
     letter-spacing: 0.01em;
-    color: #757575;
+    color:vars.$gray-font-color;
     margin-bottom: 4px;
     display: block;
 }
@@ -160,20 +160,22 @@
     color: rgba(117, 117, 117, 0.5);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    background-color: #FFFFFF;
+    background-color: vars.$white-font-color;
     width: 448px;
     height: 40px;
     padding-left: 40px;
     cursor: pointer;
     transition: border-color var(--time) var(--time-function),
     color var(--time) var(--time-function);
+
+    &:focus {
+        border-color: vars.$logo-color;
+        color: vars.$logo-color;
+        outline: none;
+    }
 }
 
-.input__items:focus {
-    border-color: #2196F3;
-    color: #2196F3;
-    outline: none;
-}
+
 
 .form__icon {
     position: absolute;
@@ -184,7 +186,7 @@
 }
 
 .input__items:focus ~ .form-icon {
-    fill: #2196F3;
+    fill: vars.$logo-color;
 }
 
 .form__icon {
