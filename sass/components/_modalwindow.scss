@@ -73,7 +73,7 @@
     transition: fill vars.$time vars.$time-function;
 }
 
-.input__items:focus ~ .form-icon {
+.input__items:focus ~ .form__icon {
     fill: vars.$logo-color;
 }
 
@@ -146,7 +146,7 @@
     justify-content: center;
 }
 
-.checkbox__item:checked + .check-label >
+.checkbox__item:checked + .check__label >
 .checkbox__input {
     background-color: vars.$logo-color;
     border: none;
