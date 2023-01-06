@@ -1,8 +1,10 @@
+@use '../utils/vars';
+
 body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    color: $black-color;
+    color: vars.$black-color;
 }
 
 * {
